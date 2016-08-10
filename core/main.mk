@@ -247,6 +247,12 @@ include $(BUILD_SYSTEM)/definitions.mk
 # Bring in Qualcomm helper macros
 include $(BUILD_SYSTEM)/qcom_utils.mk
 
+## hardening ##
+
+WITH_DEXPREOPT := true
+WITH_DEXPREOPT_PIC := true
+DONT_DEXPREOPT_PREBUILTS := false
+
 # Bring in dex_preopt.mk
 include $(BUILD_SYSTEM)/dex_preopt.mk
 
